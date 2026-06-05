@@ -29,25 +29,25 @@ function App() {
       .includes(search.toLowerCase())
   );
 
-  return (
-    <div>
-      <Header />
+return (
+  <div>
+    <Header />
 
-      <SearchBar
-        search={search}
-        setSearch={setSearch}
-      />
+    <SearchBar
+      search={search}
+      setSearch={setSearch}
+    />
 
-      <div className="container">
-        {filteredCountries.map((country) => (
-          <CountryCard
-            key={country.cca3}
-            country={country}
-          />
-        ))}
-      </div>
+    <div className="container">
+      {filteredCountries.map((country) => (
+        <CountryCard
+          key={country.cca3}
+          country={country}
+        />
+      ))}
     </div>
-  );
+  </div>
+);
 }
 
 export default App;
