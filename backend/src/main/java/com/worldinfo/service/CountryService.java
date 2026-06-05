@@ -11,7 +11,7 @@ public class CountryService {
     public Object getCountries() {
 
         String apiUrl =
-                "https://restcountries.com/v3.1/all";
+                "https://restcountries.com/v3.1/all?fields=name,capital,population,region,flags";
 
         return restTemplate.getForObject(
                 apiUrl,
